@@ -29,6 +29,16 @@ public class Catalogo {
         return null;
     }
 
+    public Veiculo getPorMotor(float motor){
+        for(Veiculos v: veiculos){
+            if(v.getMotor() == motor){
+                return v;
+            }
+        }
+        return null;
+    }
+
+
     public String imprimeCat(){
         String cat = "";
         for(Veiculos v : veiculos){
