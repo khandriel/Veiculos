@@ -28,5 +28,13 @@ public class Catalogo {
         }
         return null;
     }
+
+    public String imprimeCat(){
+        String cat = "";
+        for(Veiculos v : veiculos){
+            cat += "->" + v.getNome() + "|" + "R$" + v.getPreco() + "|" + "Ano: " + v.getAno() + "|" + "Motor: " 
+            + v.getMotor() + "|" + v.getCor() + "|" + "Tracao: " + v.getTracao();
+        }
+    }
     
 }
