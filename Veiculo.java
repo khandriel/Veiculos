@@ -1,12 +1,14 @@
 public abstract class Veiculo{
     
+    private String  nome;
     private int     preco;
     private int       ano;
     private float   motor;
     private String    cor;
     private String tracao;
 
-    public Veiculo (int preco, int ano, float motor, String cor, String tracao){
+    public Veiculo (String nome ,int preco, int ano, float motor, String cor, String tracao){
+        this.nome = nome;
         this.preco = preco;
         this.ano = ano;
         this.motor = motor;
@@ -15,6 +17,9 @@ public abstract class Veiculo{
 
     }
 
+    public String getNome(){
+        return(nome);
+    }
 
     public int getPreco(){
         return(preco);
