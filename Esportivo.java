@@ -3,13 +3,13 @@ public class Esportivo implements Veiculo {
     private String  nome;
     private int     preco;
     private int       ano;
-    private float   motor;
+    private double   motor;
     private String    cor;
     private String tracao;
     private int velocidadeMax;
     private int quantidadePortas;
 
-    public Esportivo(String nome ,int preco, int ano, float motor, String cor, String tracao,
+    public Esportivo(String nome ,int preco, int ano, double motor, String cor, String tracao,
     int velocidadeMax, int quantidadePortas){
         super();
 

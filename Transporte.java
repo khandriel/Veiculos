@@ -3,13 +3,13 @@ public class Transporte implements Veiculo{
     private String  nome;
     private int     preco;
     private int       ano;
-    private float   motor;
+    private double  motor;
     private String    cor;
     private String tracao;
     private int passageiros;
     private String revestimento;
 
-    public Transporte(String nome,int preco, int ano, float motor, String cor, String tracao,
+    public Transporte(String nome,int preco, int ano, double motor, String cor, String tracao,
         int passageiros, String revestimento){
         
         super();

@@ -3,14 +3,14 @@ public class Trilha implements Veiculo{
     private String  nome;
     private int     preco;
     private int       ano;
-    private float   motor;
+    private double   motor;
     private String    cor;
     private String tracao;
     
     private Boolean snorkel;
     private int cargaMax;
    
-    public Trilha( String nome,int preco, int ano, float motor, String cor, String tracao,
+    public Trilha( String nome,int preco, int ano, double motor, String cor, String tracao,
     Boolean snorkel, int cargaMax){
         super();
         this.nome = nome;

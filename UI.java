@@ -38,6 +38,8 @@ public class UI {
             case "1":
                 System.out.println("---> Catalogo");
                 System.out.println(c.imprimeCat());
+                execut = false;
+                break;
 
             case "2":
                 System.out.println("Digite o ano.");

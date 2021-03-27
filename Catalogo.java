@@ -28,7 +28,7 @@ public class Catalogo {
         }
     }
 
-    public void getPorMotor(float motor){
+    public void getPorMotor(double motor){
         for(Veiculo v: veiculos){
             if(v.getMotor() == motor){
                 System.out.println(v.getNome());
@@ -43,6 +43,7 @@ public class Catalogo {
             cat += "\n->" + v.getNome() + " | " + "R$" + v.getPreco() + " | " + "Ano: " + v.getAno() + " | " + "Motor: " 
             + v.getMotor() + " | " + v.getCor() + " | " + "Tracao: " + v.getTracao() + " |\n ";
         }
+        return(cat);
     }
     
 }
