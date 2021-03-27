@@ -6,7 +6,7 @@ public class Catalogo {
 
     //Aguardando merge com Veiculos.java
 
-    private ArrayList<Veiculos> veiculos;
+    private ArrayList<Veiculo> veiculos;
 
     public Catalogo(){
         veiculos =  new ArrayList<>();
@@ -20,30 +20,28 @@ public class Catalogo {
         return veiculos.size();
     }
 
-    public Veiculo getPorAno(int ano){
-        for(Veiculos v : veiculos){
+    public void getPorAno(int ano){
+        for(Veiculo v : veiculos){
             if(v.getAno() == ano){
-                return v;
+                System.out.println(v.getNome());
             }
         }
-        return null;
     }
 
-    public Veiculo getPorMotor(float motor){
-        for(Veiculos v: veiculos){
+    public void getPorMotor(float motor){
+        for(Veiculo v: veiculos){
             if(v.getMotor() == motor){
-                return v;
+                System.out.println(v.getNome());
             }
         }
-        return null;
     }
 
 
     public String imprimeCat(){
         String cat = "";
-        for(Veiculos v : veiculos){
-            cat += "->" + v.getNome() + "|" + "R$" + v.getPreco() + "|" + "Ano: " + v.getAno() + "|" + "Motor: " 
-            + v.getMotor() + "|" + v.getCor() + "|" + "Tracao: " + v.getTracao();
+        for(Veiculo v : veiculos){
+            cat += "\n->" + v.getNome() + " | " + "R$" + v.getPreco() + " | " + "Ano: " + v.getAno() + " | " + "Motor: " 
+            + v.getMotor() + " | " + v.getCor() + " | " + "Tracao: " + v.getTracao() + " |\n ";
         }
     }
     
